@@ -1,0 +1,2 @@
+class NotomsController < ApplicationController
+end
