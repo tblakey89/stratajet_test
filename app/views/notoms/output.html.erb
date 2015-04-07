@@ -1,0 +1,12 @@
+<table>
+  <% @output_data.each do |data| %>
+    <tr>
+      <td>
+        <%= data[:icao] %>
+      </td>
+      <% data[:opening_times].each do |item| %>
+        <td><%= item %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

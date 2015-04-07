@@ -5,7 +5,8 @@ class NotomsController < ApplicationController
   end
 
   def output
-    parsed_data = NotomParser.new params[:notom_data]
+    notom_data = NotomParser.new params[:notom_data]
+    @output_data = notom_data.generate_output
   end
 
 end
