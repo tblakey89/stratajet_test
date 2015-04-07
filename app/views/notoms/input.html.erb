@@ -1,0 +1,5 @@
+<%= form_tag("output", method: "post") do %>
+  <%= label_tag(:notom_data, "NOTOM Data:") %>
+  <%= text_area_tag(:notom_data) %>
+  <%= submit_tag("Submit") %>
+<% end %>

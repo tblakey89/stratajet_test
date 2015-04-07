@@ -1,4 +1,10 @@
 StratajetTest::Application.routes.draw do
+
+  root to: 'notoms#input'
+
+  get 'input', to: 'notoms#input'
+  post 'output', to: 'notoms#output'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
